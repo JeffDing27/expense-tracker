@@ -96,11 +96,11 @@ const deleteItem = async (id) => {
                 key={id}
                 className="my-4 w-full flex justify-between bg-slate-950 "
               >
-                <div className="p-4 w-full flex justify-between">
+                <div className="p-4 w-full flex justify-between bg-white">
                   <span className="capitalize">{item.name}</span>
                   <span>${item.price}</span>
                 </div>
-                <button onClick={() => deleteItem(item.id)} className="ml-8 p-4 border-l-2 border-slate-900 hover:bg-slate-900 w-16">
+                <button onClick={() => deleteItem(item.id)} className="p-4 border-l-2 border-slate-900 hover:bg-slate-500 w-16 bg-white">
                   X
                 </button>
               </li>
@@ -109,7 +109,7 @@ const deleteItem = async (id) => {
           {items.length < 1 ? (
             ""
           ) : (
-            <div className="flex justify-between p-3">
+            <div className="flex justify-between p-3 bg-white">
               <span>Total</span>
               <span>${total}</span>
             </div>
